@@ -2,8 +2,9 @@
 
 # 1. For bitwise operators
 
-1. To check odd or even : (n&1 == 0) ? EVEN : ODD
-2. A^A = 0 and A^0 = A<br>
+* To check odd or even : (n&1 == 0) ? EVEN : ODD
+* A^A = 0 and A^0 = A<br>
    We can use it to check number which is not in pair
-3. To check if 2 numbers have opposite sign: ((a^b) < 0) ? OPPOSITE : NOT OPPOSITE
-4. 
+* To check if 2 numbers have opposite sign: ((a^b) < 0) ? OPPOSITE : NOT OPPOSITE
+* To check if n is power of 2 => N && !(N&(N-1))
+* 
