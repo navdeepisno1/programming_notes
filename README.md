@@ -47,7 +47,7 @@
 * To create a tree from traversals one of the traversals should be inorder else tree could not be constructed
 * Left view is first element of every level in LevelOrder Traversal 
 * Right view is last element of every level in LevelOrder Traversal 
-* Horizontal distance:
+* Horizontal distance:<br>
    root = zero
    for left node level-1
    for right node level+1
