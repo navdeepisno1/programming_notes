@@ -41,7 +41,7 @@
    print(root)<br>
    
   LevelOrder(root):<br>
-   Use Queue and add all the nodes level by level
+   Use Queue and add all the nodes level by level followed by pop
 * To Delete a tree use postorder traversal
 * To Copy a tree use preorder traversal
 * To create a tree from traversals one of the traversals should be inorder else tree could not be constructed
