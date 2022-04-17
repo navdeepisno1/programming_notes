@@ -27,7 +27,7 @@
 
 * Height = 1 + max(left,right)  and height of empty tree = -1;
 * For a tree to be bst every node must fulfill the condition including the parents of parents and upto root
-* Traversals 
+* Traversals <br>
   Inorder(root):
    inorder(left)
    print(root)
