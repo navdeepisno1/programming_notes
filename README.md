@@ -10,10 +10,13 @@
 
 # 2. For LinkedList
 
-* prev=NULL curr=head next=NULL
+* 3 pointers used 
+  prev=NULL
+  curr=head
+  next=NULL
 * 2 pointers / Slow and Fast pointers 
-   slow = slow->next
-   fast = fast->next->next
+  slow = slow->next
+  fast = fast->next->next
 
 # 3. For Trees
 
