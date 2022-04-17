@@ -7,4 +7,15 @@
    We can use it to check number which is not in pair
 * To check if 2 numbers have opposite sign: ((a^b) < 0) ? OPPOSITE : NOT OPPOSITE
 * To check if n is power of 2 => N && !(N&(N-1))
-* 
+
+# 2. For LinkedList
+
+* prev=NULL curr=head next=NULL
+* 2 pointers / Slow and Fast pointers 
+   slow = slow->next
+   fast = fast->next->next
+
+# 3. For Trees
+
+* Height = 1 + max(left,right)  and height of empty tree = -1;
+*
