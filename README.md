@@ -17,8 +17,31 @@
 * 2 pointers / Slow and Fast pointers <br>
   slow = slow->next
   fast = fast->next->next
+* Cycle detection 
+  if(slow==fast) 
+   true 
+  else 
+   false
 
 # 3. For Trees
 
 * Height = 1 + max(left,right)  and height of empty tree = -1;
-*
+* For a tree to be bst every node must fulfill the condition including the parents of parents and upto root
+* Traversals 
+  Inorder(root):
+   inorder(left)
+   print(root)
+   inorder(right)
+   
+  Preorder(root):
+   print(root)
+   Preorder(left)   
+   Preorder(right)
+   
+  Postorder(root):
+   Postorder(left)   
+   Postorder(right)
+   print(root)
+   
+  LevelOrder(root):
+   Use Queue and add all the nodes level by level
