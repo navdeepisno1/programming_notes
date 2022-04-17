@@ -10,11 +10,11 @@
 
 # 2. For LinkedList
 
-* 3 pointers used 
+* 3 pointers used <br>
   prev=NULL
   curr=head
   next=NULL
-* 2 pointers / Slow and Fast pointers 
+* 2 pointers / Slow and Fast pointers <br>
   slow = slow->next
   fast = fast->next->next
 
