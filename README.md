@@ -9,16 +9,16 @@
 
 # 2. For LinkedList
 * 3 pointers used <br>
-  prev=NULL<br>
-  curr=head<br>
+  prev=NULL
+  curr=head
   next=NULL
 * 2 pointers / Slow and Fast pointers <br>
-  slow = slow->next<br>
-  fast = fast->next->next
-* Cycle detection 
-  if(slow==fast) <br>
-   true <br>
-  else <br>
+   slow = slow->next
+   fast = fast->next->next
+* Cycle detection <br> 
+  if(slow==fast) 
+   true 
+  else 
    false
 
 # 3. For Trees
@@ -26,19 +26,24 @@
 * For a tree to be bst every node must fulfill the condition including the parents of parents and upto root
 * Traversals <br>
   Inorder(root): <br>
-   inorder(left)<br>
-   print(root)<br>
-   inorder(right)<br>
+   inorder(left)
+   print(root)
+   inorder(right)
    
   Preorder(root):<br>
-   print(root)<br>
-   Preorder(left) <br>  
-   Preorder(right)<br>
+   print(root)
+   Preorder(left) 
+   Preorder(right)
    
   Postorder(root):<br>
-   Postorder(left)   <br>
-   Postorder(right)<br>
+   Postorder(left)   
+   Postorder(right)
    print(root)<br>
    
   LevelOrder(root):<br>
    Use Queue and add all the nodes level by level
+* To Delete a tree use postorder traversal
+* To Copy a tree use preorder traversal
+* To create a tree from traversals one of the traversals should be inorder else tree could not be constructed
+
+  
