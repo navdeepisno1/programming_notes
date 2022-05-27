@@ -55,8 +55,8 @@
    
 # 4. For Matrix
 * To rotate a matrix Anti Clockwise - Reverse every row and then perform Transpose
+* To rotate a matrix Clockwise - Transpose and Reverse every row
 * To sort a matrix create an Array of same size and sort it and place the elements in the matrix one by one;
 * Transpose of matrix is swapping A[i][j] with A[j][i]
-* 
 
   
