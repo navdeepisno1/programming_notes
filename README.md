@@ -71,7 +71,8 @@ This is frequently used in Competitive Programming. We first multiply all elemen
 | set                | BST                           |
 | map                | Self Balancing Tree           |
 | unordered_map      | HashTable                     |
-| priority_queue     | arrays/vector                 |
-| stack              | vector/deque/list             |
-| queue              | vector/deque/list             |
+| priority_queue     | arrays / vector                 |
+| stack              | vector / deque / list             |
+| queue              | vector / deque / list             |
 | vector             | dynamic array and its pointer |
+| graph             | 2D Array / LinkedList Array / Vector of Vector |
