@@ -65,12 +65,14 @@
 This is frequently used in Competitive Programming. We first multiply all elements with (-1). Then we create a max heap (max heap is the default for priority queue). When we access the data and want to print it we simply multiply those elements with (-1) again.
 
 # 6. STL and there internal Data structures and common methods
-* | STL Data Structure | Internal Implementation using |
-| :---: | :---: |
-| set | BST |
-| map | Self Balancing Tree |
-| unordered_map | HashTable |
-| priority_queue | arrays/vector |
-| stack | vector/deque/list |
-| queue | vector/deque/list |
-| vector | dynamic array and its pointer |
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br>
+| STL Data Structure | Internal Implementation using |<br>
+| :----------------: | :---------------------------: |<br>
+| set                | BST                           |<br>
+| map                | Self Balancing Tree           |<br>
+| unordered_map      | HashTable                     |<br>
+| priority_queue     | arrays/vector                 |<br>
+| stack              | vector/deque/list             |<br>
+| queue              | vector/deque/list             |<br>
+| vector             | dynamic array and its pointer |<br>
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-<br>
