@@ -59,4 +59,9 @@
 * To sort a matrix create an Array of same size and sort it and place the elements in the matrix one by one;
 * Transpose of matrix is swapping A[i][j] with A[j][i]
 
+# 5. For Priority Queue
+* Another method for making min-heap using default priority_queue:
+
+This is frequently used in Competitive Programming. We first multiply all elements with (-1). Then we create a max heap (max heap is the default for priority queue). When we access the data and want to print it we simply multiply those elements with (-1) again.
+
   
