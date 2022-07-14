@@ -1,3 +1,8 @@
+//Author NAVDEEPISNO1
+//Navdeep Sharma
+
+
+
 /*
 ALgorithm
 
@@ -22,11 +27,13 @@ ALgorithm
 #include <iostream>
 using namespace std;
 
+//All global variables
 int n,m,x,y,l;
 int front=0;
 int back=0;
 int ans;
 
+//All global arrays
 int A[1000][1000];
 bool visited[1000][1000];
 int UP[] = {1,2,4,7};
@@ -34,6 +41,7 @@ int DOWN[] = {1,2,5,6};
 int LEFT[] = {1,3,6,7};
 int RIGHT[] = {1,3,4,5};
 
+//Node structure for Queue
 struct node
 {
 	int x;
@@ -41,35 +49,45 @@ struct node
 	int l;
 };
 
+//Our Queue 
+//Never use queue as variable name it will give error
 node que[1000000];
 
+//To check if our queue is empty
 bool empty()
 {
 	return front==back;
 }
 
+//Push the data to queue
 void push(int x,int y,int l)
 {	
+	//As we are not using pointers so we dont require to create variable using malloc
+	
 	//add element to back
 	que[back].x = x;
 	que[back].y = y;
 	que[back].l = l;
 
-	//INcrease back pointer
+	//Increase back pointer
 	back++;
 }
 
+//Pop the data 
+//We are using same function to get front data and pop it 
 node pop()
 {
 	return que[front++];
 }
 
+//For every testcase empty the queue by reinitialising the queue
 void initializeQ()
 {
 	front = 0;
 	back = 0;
 }
 
+//For every test case we need to set visited array false
 void setVisited()
 {
 	for(int i=0;i<1000;i++)
@@ -81,6 +99,7 @@ void setVisited()
 	}
 }
 
+//Check boundary conditions and visited 
 bool isSafe(int r,int c)
 {
 	if(r<0 || c<0) return false;
@@ -89,6 +108,7 @@ bool isSafe(int r,int c)
 	return true;
 }
 
+//Self Defined
 bool canGoUp(int x,int y)
 {
 	for(int i=0;i<4;i++)
@@ -102,6 +122,7 @@ bool canGoUp(int x,int y)
 	return false;
 }
 
+//Self Defined
 bool canGoDown(int x,int y)
 {
 	for(int i=0;i<4;i++)
@@ -115,6 +136,7 @@ bool canGoDown(int x,int y)
 	return false;
 }
 
+//Self Defined
 bool canGoLeft(int x,int y)
 {
 	for(int i=0;i<4;i++)
@@ -128,6 +150,7 @@ bool canGoLeft(int x,int y)
 	return false;
 }
 
+//Self Defined
 bool canGoRight(int x,int y)
 {
 	for(int i=0;i<4;i++)
@@ -141,17 +164,22 @@ bool canGoRight(int x,int y)
 	return false;
 }
 
+//Utility function to solve every test case individually
 void solve()
 {
 	//check for 0;
 	if(A[x][y]==0) return;
 	
+	//As the endoscope can move in the current pipe initialise the answer with 1;
 	ans = 1;
 
-	//We will do BFS
+	//We will do BFS with queue
+	
+	//Mark starting postion as marked and push it to queue
 	visited[x][y] = true;
 	push(x,y,1);
 
+	//Run while queue is not empty
 	while(!empty())
 	{
 		//get front node && pop it
@@ -161,9 +189,10 @@ void solve()
 		int lT = n.l;
 
 		//From here we will go to different directions 
-		//Up Down Left Right
-		//Based on the pipe present and each time we could go to certain directions 
+		//Up Down Left Right		
 		//Add 1 to answer each other		
+		
+		//We have to check both the current pipe and the next pipe to ensure smooth travel
 
 		//Up
 		if(isSafe(rT-1,cT) && lT+1<=l)
@@ -224,14 +253,22 @@ void solve()
 
 }
 
+//Main function
 int main() {
+	
+	//Get the number of testcases
 	int t;
 	cin>>t;	
 	
+	//While t!=0 because 0==false
 	while(t--)
 	{
+		//Get matrix size
+		//Get current location or starting location
+		//Get maximum length of endoscope
 		cin>>n>>m>>x>>y>>l;
 
+		//Fill matrix with data
 		for(int i=0;i<n;i++)
 		{
 			for(int j=0;j<m;j++)
@@ -239,14 +276,20 @@ int main() {
 				cin>>A[i][j];
 			}
 		}
-
+		
+		//Reset the queue and visited array
 		initializeQ();
 		setVisited();
 
+		//Set answer according to quetion as 0 or -1
 		ans = 0;
+		
+		//Call helper function
 		solve();
+		
+		//Output the result in each line
 		cout<<ans<<endl;
 	}
-  
+	
   return 0;
 }
