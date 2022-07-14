@@ -6,7 +6,7 @@
 /*
 ALgorithm
 
-The basic idea used here is we will enumerate every possible combination
+The basic idea used here is we will enumerate every possible combination and return the minimum distance from them
 
 Steps:
 1 As we know that we have two coordinates everywhere and we need them at same time to perform calculation given in the question (Here Distance).
