@@ -60,6 +60,6 @@ int main()
 			dp[i][j]=-1;
 		}
 	}
-        cout << getMaxCoins(balloonCoins, nCoins);
+        cout << getMaxCoins(balloonCoins, nCoins)<<endl;
     }
 }
