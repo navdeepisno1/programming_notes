@@ -5,8 +5,19 @@
 /*
 Algorithm
 
-
-*/
+1. We calculate the maxmimum coins for every Index of the array by considering that last balloon remain at current index only between the range of left and right.
+2. We simply insert two '1' in the array starting and ending of the array.
+3. Now we will run a loop for every index 1 to n.
+4. For every index we just do the product of left ,right and current index.
+5. Then, Do function call for left part before the current index of array, right value becomes  Index -1.
+6. Range will become (left,index-1).
+7. Similary, Do for the right part.Range will become (index+1,right).
+8. Taking the sum of product , value come from left and right.
+9. If left becomes greater than right then return 0;
+10. If we will have calculated the value  for range of (left,right) then , we will store our result into DP.
+11. If We have already calculated for range then simply return the value of DP[left][right]
+12. we will repeat the 5-11 steps for every index and calculate the maximum value. 
+ */
 
 //CODE
 
