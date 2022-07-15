@@ -2,7 +2,7 @@
 //Navdeep Sharma
 
 /*
-Alogorithm
+Algorithm
 
 
 */
