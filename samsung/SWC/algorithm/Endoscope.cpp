@@ -6,7 +6,7 @@
 /*
 ALgorithm
 
-1 We will check for current position if it is zero return 0 as naswer
+1 We will check for current position if it is zero return 0 as answer
 2 Now we will run a BFS from the current node and implement it using queue
 3 Queue is created using array
 4 Initialise the answer with 1
@@ -164,7 +164,7 @@ bool canGoRight(int x,int y)
 	return false;
 }
 
-//Utility function to solve every test case individually
+//Helper function to solve every test case individually
 void solve()
 {
 	//check for 0;
