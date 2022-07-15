@@ -48,8 +48,6 @@ int maxCoinsUtility(int *arr, int left, int right)
 	
 	
     // Lb is the index of the last balloon burst in (left, right)
-  //, and to 
-  
     for (int lb = left; lb <= right; lb++)
     {                          
 	                        // get the value of last balloon at index lb
