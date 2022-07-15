@@ -22,10 +22,15 @@ int maxCoinsUtility(int *arr, int left, int right)
     int ans = INT_MIN;
     for (int lb = left; lb <= right; lb++)
     {
-        int tempAns = arr[left - 1] * arr[right + 1] * arr[lb];
-        int leftCoinsExcludingCurrentBalloon = google(arr, left, lb - 1);
+				int currentBalloon = arr[lb];        
+				
+				int tempAns = arr[left - 1] * arr[right + 1] * currentBalloon;
+        
+				int leftCoinsExcludingCurrentBalloon = google(arr, left, lb - 1);
         int rightCoinsExcludingCurrentBalloon = google(arr, lb + 1, right);
+			
         tempAns += (leftCoinsExcludingCurrentBalloon + rightCoinsExcludingCurrentBalloon );
+			
         ans = max(ans, tempAns);
     }
     return dp[left][right] = ans;
