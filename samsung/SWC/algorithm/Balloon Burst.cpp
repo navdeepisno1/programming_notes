@@ -13,7 +13,7 @@ Algorithm
 using namespace std;
 
 int dp[102][102];
-int google(int *arr, int left, int right)
+int maxCoinsUtility(int *arr, int left, int right)
 {
     if (left > right)
         return 0;
@@ -22,17 +22,17 @@ int google(int *arr, int left, int right)
     int ans = INT_MIN;
     for (int lb = left; lb <= right; lb++)
     {
-        int tempans = arr[left - 1] * arr[right + 1] * arr[lb];
-        int x = google(arr, left, lb - 1);
-        int y = google(arr, lb + 1, right);
-        tempans += (x + y);
-        ans = max(ans, tempans);
+        int tempAns = arr[left - 1] * arr[right + 1] * arr[lb];
+        int leftCoinsExcludingCurrentBalloon = google(arr, left, lb - 1);
+        int rightCoinsExcludingCurrentBalloon = google(arr, lb + 1, right);
+        tempAns += (leftCoinsExcludingCurrentBalloon + rightCoinsExcludingCurrentBalloon );
+        ans = max(ans, tempAns);
     }
     return dp[left][right] = ans;
 }
-int maxCoins(int *arr, int n)
+int getMaxCoins(int *arr, int n)
 {
-    return google(arr, 1, n);
+    return maxCoinsUtility(arr, 1, n);
 }
 
 int main()
@@ -42,14 +42,19 @@ int main()
 
     while (t--)
     {
-        int n;
-        cin >> n;
-        int arr[n + 2];
-        arr[0] = arr[n + 1] = 1;
-        for (int i = 1; i <= n; i++)
+        int nBalloons;
+        cin >> nBalloons;
+        int balloonCoins[nBalloons + 2];
+        balloonCoins[0] = balloonCoins[nBalloons + 1] = 1;
+        for (int i = 1; i <= nBalloons; i++)
         {
-            cin >> arr[i];
+            cin >> balloonCoins[i];
         }
-        cout << maxCoins(arr, n);
+        for(int i=0;i<102;i++){
+		for(int j=0;j<102;j++){
+			dp[i][j]=-1;
+		}
+	}
+        cout << getMaxCoins(balloonCoins, nCoins);
     }
 }
