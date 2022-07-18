@@ -107,4 +107,27 @@
 		],
 		"description": "Boilerplate template for author Yash"
 	},
+	"Template For Question": {
+		"prefix": [
+			"template-question",
+		],
+		"body": [
+			"//Question : ",
+			"//Answer :",
+			"",
+			"/*",
+			"Statement:",
+			"",
+			"Input:",
+			"",
+			"Output:",
+			"",
+			"Constrains:",
+			"",
+			"Examples:",
+			"",
+			"*/",
+		],
+		"description": "Boilerplate template for Question"
+	},
 }
