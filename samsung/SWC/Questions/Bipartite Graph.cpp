@@ -1,4 +1,4 @@
-//Question : Dectect Cycle in Undirected Graph and Print It
+//Question : Bipartite Graph
 //Answer :
 
 /*

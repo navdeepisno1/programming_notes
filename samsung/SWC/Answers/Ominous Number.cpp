@@ -54,6 +54,7 @@ int getTotalProducts(int nStart, int nEnd, int k, int DigitDelete[], int n)
             rougeNumber += DIGITS_MAP[DigitDelete[i]];
         }
 
+        //If RougeNumbers is less than K than increment the count
         if (rougeNumber < k)
         {
             count++;

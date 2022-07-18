@@ -1,4 +1,5 @@
 //Question : Endoscope
+//Answer :
 
 /*
 Statement:
