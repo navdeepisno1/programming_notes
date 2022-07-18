@@ -1,0 +1,59 @@
+{
+	"Author Template Navi": {
+		"prefix": [
+			"auth-navi",
+		],
+		"body": [
+			"//Author NAVDEEPISNO1",
+			"//Navdeep Sharma",
+			"",
+			"//Question :",
+			"",
+			"/*",
+			"ALgorithm",
+			"",
+			"*/",
+			"",
+			"//Code",
+		],
+		"description": "Boilerplate template for author Navi"
+	},
+	"Author Template Shubham": {
+		"prefix": [
+			"auth-shubham",
+		],
+		"body": [
+			"//Author TheGreatShubham",
+			"//Shubham Bansal",
+			"",
+			"//Question :",
+			"",
+			"/*",
+			"ALgorithm",
+			"",
+			"*/",
+			"",
+			"//Code",
+		],
+		"description": "Boilerplate template for author Shubham"
+	},
+	"Author Template Yash": {
+		"prefix": [
+			"auth-yash",
+		],
+		"body": [
+			"//Author NAVDEEPISNO1",
+			"//Yash Dhingra",
+			"",
+			"//Question :",
+			"",
+			"/*",
+			"ALgorithm",
+			"",
+			"*/",
+			"",
+			"//Code",
+		],
+		"description": "Boilerplate template for author Yash"
+	},
+}
