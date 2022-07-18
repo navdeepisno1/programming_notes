@@ -6,5 +6,8 @@
         "Bansal",
         "Yash",
         "Dhingra"
-    ]
+    ],
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
