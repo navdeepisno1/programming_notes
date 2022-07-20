@@ -217,8 +217,8 @@ int main()
             int x, y;
             cin >> x >> y;
 
-            rareElements[nRareElements][0] = x;
-            rareElements[nRareElements][1] = y;
+            rareElements[i][0] = x;
+            rareElements[i][1] = y;
         }
 
         //Get the field (0 = No path || 1 = Path)
