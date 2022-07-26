@@ -78,6 +78,7 @@ This is frequently used in Competitive Programming. We first multiply all elemen
 | graph             | 2D Array / LinkedList Array / Vector of Vector |
 
 # 7. Some important Results about  Binary Tree and BSTs
+* Inorder of BST is always in sorted order.
 * If n is the number of nodes present in the tree. Then, 
 
 The total number of possible Binary search Trees = (2n!) / ((n+1)!*n!).
