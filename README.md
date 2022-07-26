@@ -76,3 +76,8 @@ This is frequently used in Competitive Programming. We first multiply all elemen
 | queue              | vector / deque / list             |
 | vector             | dynamic array and its pointer |
 | graph             | 2D Array / LinkedList Array / Vector of Vector |
+
+# 7. Some important Results about  Binary Tree and BSTs
+* If n is the number of nodes present in the tree. Then, 
+The total number of possible Binary search Trees = (2n!)/((n+1)!*n!).
+The total numebr of possible Binary Trees = (total possible number of BSTs)*(n!). 
