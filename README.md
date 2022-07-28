@@ -85,6 +85,6 @@ This is frequently used in Competitive Programming. We first multiply all elemen
 
 # 8. For balanced brackets
 * We can use a stack to check if a string containing multiple type of brackets like [,{,( is balanced or not . <br>
-  1 -> Start scanning in the string from left to right
-  2 -> If it is opening bracket or stack is empty push to stack else if top the character is matching opening bracket for the current closing bracket POP the element from the stack
-  3 -> Check if stack is empty or not. (EMPTY = Balanced)
+  1 -> Start scanning in the string from left to right <br>
+  2 -> If it is opening bracket or stack is empty push to stack else if top the character is matching opening bracket for the current closing bracket POP the element from the stack <br>
+  3 -> Check if stack is empty or not. (EMPTY = Balanced) <br>
