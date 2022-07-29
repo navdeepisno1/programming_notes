@@ -9,11 +9,11 @@
 
 # 2. For LinkedList
 * 3 pointers used <br>
-  prev=NULL
-  curr=head
+  prev=NULL <br>
+  curr=head <br>
   next=NULL
 * 2 pointers / Slow and Fast pointers <br>
-   slow = slow->next
+   slow = slow->next <br>
    fast = fast->next->next
 * Cycle detection <br> 
   if(slow==fast) 
@@ -26,18 +26,18 @@
 * For a tree to be bst every node must fulfill the condition including the parents of parents and upto root
 * Traversals <br>
   Inorder(root): <br>
-   inorder(left)
-   print(root)
-   inorder(right)
+   inorder(left) <br>
+   print(root) <br>
+   inorder(right) <br>
    
   Preorder(root):<br>
-   print(root)
-   Preorder(left) 
-   Preorder(right)
+   print(root) <Br>
+   Preorder(left) <br>
+   Preorder(right) <br>
    
   Postorder(root):<br>
-   Postorder(left)   
-   Postorder(right)
+   Postorder(left)   <br>
+   Postorder(right) <br>
    print(root)<br>
    
   LevelOrder(root):<br>
