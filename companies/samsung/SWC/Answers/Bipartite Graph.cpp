@@ -47,7 +47,7 @@ bool bfs(int vertex, int nodeColors[], int nVertices)
         //Only consider if there is edge i.e graph[i][j]==1
         if (graph[vertex][i] == 1)
         {
-            //Now if Vertex is not colores we will color it with different color than parent vertex
+            //Now if Vertex is not colored we will color it with different color than parent vertex
             if (nodeColors[i] != -1)
             {
                 //Color the vertex

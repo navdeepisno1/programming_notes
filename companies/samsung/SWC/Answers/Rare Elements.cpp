@@ -11,7 +11,7 @@ Basic Approach: Find all max distance from all rare elements to path and get min
 Steps:
 1 -> Input necessary variables like fieldSize, number of rare elements, and Field array (0: no Path || 1 : Path)
 2 -> We will use a BFS approach so we will create a queue and its requires functions i.e push ,pop ,empty
-3 -> We will iterate over every coordinate in the field and try to get maximum distace from every rare element
+3 -> We will iterate over every coordinate in the field and try to get maximum distance from every rare element
 4 -> Out of every maximum distance we will get the minimum distance and print the output
 
 */

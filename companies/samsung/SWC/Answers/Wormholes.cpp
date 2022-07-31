@@ -10,7 +10,7 @@ Basic Approach: We will enumerate every possible path using backtracking and ret
 
 Steps:
 1 -> Start with Initial Source and Destination ,Now as specified in question we can use wormholes any number of time.
-2 -> At every step we will ierate over every wormwhole and calculate the cost with code + distance 
+2 -> At every step we will iterate over every wormhole and calculate the cost with code + distance 
 3 -> Now the near end to destination could be either start or destination of wormholes. We have to consider that both could source.
 4 -> Update answer at every step and at last print the answer
 
