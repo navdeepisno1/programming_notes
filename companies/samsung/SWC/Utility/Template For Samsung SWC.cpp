@@ -111,7 +111,7 @@ int main()
         // get the array inputs
 
         // call the solve function
-        // sovle()
+        // solve()
 
         // Answer must be according to the sample output
         // cout<<answer;
